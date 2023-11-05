@@ -7,28 +7,28 @@ import NotFound from '../views/NotFound'
 
 
 const Router = ()=> {
-    const location = useLocation()
+const location = useLocation()
 
-    const renderNavigation = ()=> {
-            const pathname = location.pathname
-            if(pathname === '/login' || pathname === '/registro') {
-                    return false
-            }
+const renderNavigation = ()=> {
+        const pathname = location.pathname
+        if(pathname === '/login' || pathname === '/registro') {
+                return false
+        }
 
-            return true
-    }
+        return true
+}
 
-    return (
-            <>
-                    { renderNavigation() && <Navigation />}
+return (
+        <>
+                { renderNavigation() && <Navigation />}
 
-                    <Routes>
-                            <Route path="/" element={ <Home /> } />
-                            <Route path="/contacto" element={ <Contacto /> } />
-                            <Route path="*" element={ <NotFound /> } />
-                    </Routes>
-            </>
-    )
+                <Routes>
+                        <Route path="/" element={ <Home /> } />
+                        <Route path="/contacto" element={ <Contacto /> } />
+                        <Route path="*" element={ <NotFound /> } />
+                </Routes>
+        </>
+)
 }
 
 export default Router
