@@ -10,7 +10,7 @@ const Navigation = () => {
 				<Link to="/" className="text-white ms-3 text-decoration-none"> 🏠 Home</Link>
 				<Link to="/contacto" className="text-white ms-3 text-decoration-none">📔 Contacto</Link>
 			</Container>
-				<Navbar.Brand className="text-white ms-3 text-decoration-none" href="#">Happy Cake 🍰</Navbar.Brand>
+				<Navbar.Brand className="text-white ms-3 text-decoration-none" href="/">Happy Cake 🍰</Navbar.Brand>
 		</Navbar>
 	);
 };
