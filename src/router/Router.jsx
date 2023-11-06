@@ -9,6 +9,8 @@ import NotFound from '../views/NotFound'
 const Router = ()=> {
 const location = useLocation()
 
+
+//ESTA FUNCION NO ESTA HACIENDO NADA EN ESTA APLICACION PERO LA DEJO DE EJEMPLO AKI PARA EL FUTURO CUANDO QUIERA ESCONDER LA BARRA DE NAVEGACION
 const renderNavigation = ()=> {
         const pathname = location.pathname
         if(pathname === '/login' || pathname === '/registro') {
